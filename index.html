@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário matrícula</title>
+</head>
+
+<body>
+    <h1>Matrícula aluno</h1>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="name">Nome: </label>
+        <input type="text" name="letter" id="letter" required>
+        <br><br>
+        <label for="cpf">CPF: </label>
+        <input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX" title="XXX.XXX.XXX-XX"
+            pattern="(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})">
+        <br><br>
+        <label for="dt">Data nascimento: </label>
+        <input type="date" name="dt" id="dt" required>
+        <br><br>
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="fem" id="fem">
+        <label>Feminino</label>
+        <input type="radio" name="mas" id="mas">
+        <label>Masculino</label>
+        <br><br>
+        <label for="city">Cidade: </label>
+        <input type="text" name="letter" id="letter" required>
+        <label for="states">Estado: </label>
+        <select name="states" id="states">
+            <optgroup label="Norte">
+                <option value="Acre">AC</option>
+                <option value="Amapá">AP</option>
+                <option value="Amazonas">AM</option>
+                <option value="Pará">PA</option>
+                <option value="Rondônia">RO</option>
+                <option value="Roraima">RR</option>
+                <option value="Tocantins">TO</option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="Alagoas">AL</option>
+                <option value="Bahia">BA</option>
+                <option value="Ceará">CE</option>
+                <option value="Maranhão">MA</option>
+                <option value="Paraíba">PB</option>
+                <option value="Pernambuco">PE</option>
+                <option value="Piauí">PI</option>
+                <option value="Rio Grande do Norte">RN</option>
+                <option value="Sergipe">SE</option>
+            </optgroup>
+            <optgroup label="Centro-Oeste">
+                <option value="Distrito Federal">DF</option>
+                <option value="Goiás">GO</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Mato Grosso do Sul">MS</option>
+            </optgroup>
+            <optgroup label="Sudeste">
+                <option value="Espírito Santo">ES</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="São Paulo">SP</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="Paraná">PR</option>
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Santa Catarina">SC</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Dados da Matrícula</legend>
+        <label for="class">Curso: </label>
+        <br>
+        <input type="radio" name="ads" id="ads">
+        <label>Análise e Desenvolvimento de Sistemas</label>
+        <input type="radio" name="em" id="em">
+        <label>Engenharia Mecânica</label>
+        <input type="radio" name="si" id="si">
+        <label>Tecnologia em Sistemas para Internet</label>
+        <br><br>
+        <label for="class">Disciplina(s) Optativa: </label>
+        <br>
+        <input type="checkbox" id="robo" name="robo">
+        <label for="robo">Programação de Robos</label>
+        <input type="checkbox" id="ia" name="ia">
+        <label for="ia">Desenvolvimento de Inteligências Artificiais</label>
+        <br>
+        <input type="checkbox" id="mc" name="mc">
+        <label for="mc">Modelagem Computacional</label>
+        <input type="checkbox" id="docker" name="docker">
+        <label for="docker">Ambientes isolados: desenvolvimento com Docker</label> 
+        <br><br>
+        <label for="review">Sugestões de disciplinas futuras:</label><br>
+        <textarea id="review" name="review" rows="4" cols="70"></textarea>  
+    </fieldset>
+</body>
+
+</html>
